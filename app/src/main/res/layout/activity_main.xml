@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Team A"
+                android:textSize="@dimen/buttonSize"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/TA"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="2"
+                android:text="0"
+                android:textSize="@dimen/scoreSize"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/L3"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/buttonSize"
+                android:text="@string/threePoints"
+                android:background="@color/theme"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="points"
+                android:tag="L3"/>
+
+            <Button
+                android:id="@+id/L2"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/buttonSize"
+                android:text="@string/twoPoints"
+                android:background="@color/theme"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="points"
+                android:tag="L2"
+                />
+            <Button
+                android:id="@+id/L1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/buttonSize"
+                android:text="@string/onePoints"
+                android:background="@color/theme"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="points"
+                android:tag="L1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#85000000"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:id="@+id/rightLayout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Team B"
+                android:textSize="@dimen/buttonSize"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/TB"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="2"
+                android:textSize="@dimen/scoreSize"
+                android:text="0"
+                android:gravity="center"
+                />
+            <Button
+                android:id="@+id/R3"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/buttonSize"
+                android:text="@string/threePoints"
+                android:background="@color/theme"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="points"
+                android:tag="R3"/>
+
+            <Button
+                android:id="@+id/R2"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/buttonSize"
+                android:text="@string/twoPoints"
+                android:background="@color/theme"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="points"
+                android:tag="R2"
+                />
+            <Button
+                android:id="@+id/R1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/buttonSize"
+                android:text="@string/onePoints"
+                android:background="@color/theme"
+                android:layout_margin="@dimen/buttonMargin"
+                android:onClick="points"
+                android:tag="R1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="65dp"
+            android:layout_margin="@dimen/buttonMargin"
+            android:background="@color/theme"
+            android:text="@string/reset"
+            android:textSize="@dimen/buttonSize"
+            android:onClick="points"
+            android:tag="C"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
